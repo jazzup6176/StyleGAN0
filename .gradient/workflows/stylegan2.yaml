@@ -33,8 +33,8 @@ jobs:
         pip install scipy==1.3.3
         pip install requests==2.22.0
         pip install Pillow==6.2.1
-        pip install streamlit -q
-        streamlit run app.py && npx localtunnel --port 8501
+        pip install streamlit
+        pip install pyngrok
         cd /inputs/stylegan2
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
