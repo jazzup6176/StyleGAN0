@@ -35,6 +35,8 @@ jobs:
         pip install Pillow==6.2.1
         pip install streamlit -q
         pip install pyngrok
+        npm install -g localtunnel
+        yarn add localtunnel
         streamlit run https://github.com/jazzup6176/StyleGAN0/blob/main/app.py
         npx localtunnel --port 8501
         cd /inputs/stylegan2
