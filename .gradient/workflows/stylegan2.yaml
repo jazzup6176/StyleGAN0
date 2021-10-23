@@ -36,6 +36,8 @@ jobs:
         pip install --upgrade pip
         pip install wget
         cd /inputs/stylegan2
+        ls
+        lscpu
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
           --seeds=6600-6605 \
