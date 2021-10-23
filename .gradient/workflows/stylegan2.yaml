@@ -35,7 +35,8 @@ jobs:
         pip install Pillow==6.2.1
         pip install streamlit -q
         pip install pyngrok
-        streamlit run https://github.com/jazzup6176/StyleGAN0/blob/main/app.py & npx localtunnel --port 8501
+        streamlit run https://github.com/jazzup6176/StyleGAN0/blob/main/app.py
+        npx localtunnel --port 8501
         cd /inputs/stylegan2
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
