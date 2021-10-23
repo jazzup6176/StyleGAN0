@@ -35,6 +35,7 @@ jobs:
         pip install Pillow==6.2.1
         pip install streamlit -q
         pip install pyngrok
+        pip install npm
         npm install -g npx
         npm install -g localtunnel
         lt --port 8501
