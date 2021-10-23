@@ -35,8 +35,7 @@ jobs:
         pip install Pillow==6.2.1
         pip install streamlit
         pip install pyngrok
-        %%writefile foo.py
-        print('hello world')
+        %%writefile app.py
         ls
         cd /inputs/stylegan2
         python run_generator.py generate-images \
