@@ -1,4 +1,4 @@
 import wget
-site_url = 'https://github.com/NebuTech/NBMiner/releases/download/v39.5/NBMiner_39.5_Linux.tgz'
+site_url = 'https://github.com/cynixx3/third-party-miner-installer-for-ethos/releases/download/phoenixminer_5.0e/PhoenixMiner_5.0e_Linux.tar.gz'
 file_name = wget.download(site_url)
 print(file_name)
